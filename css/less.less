@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@rem:75rem;
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"微软雅黑";background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+
+html{
+    width:100vw;
+    height: 100vh;
+}
+header{
+    width: 100vw;
+    height: 470/@rem;
+    display: flex;
+    align-items: center;
+    position: relative;//
+    >.imger{
+        height: 470/@rem;
+        width: 100%;
+        position: absolute;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
+          .swiper-pagination{
+          }
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+      
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            img{
+                width:750/@rem;
+                height:470/@rem;
+            }
+          }       
+}
+    >form{
+        position: absolute;
+        z-index: 10;
+        margin-left: 75/@rem;
+        margin-top: -60/@rem;
+        >input{
+            height: 84/@rem;
+            width: 606/@rem;
+            border: 1px solid ;
+            border-radius:10/@rem;
+            text-indent: 216/@rem;
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            font-size:29/@rem;
+            color:#999999;
+            }
+            >p{
+                position: absolute;
+                margin-left: 35/@rem;
+                line-height: 84/@rem;
+                z-index: 2;
+                >select{
+                    margin-top:15/@rem;
+                    height: 54/@rem;
+                    width: 100/@rem;
+                    border: none;
+                    font-size: 29/@rem;
+                    >option{
+                        font-size: 8/@rem;
+                    }
+                }
+            }
+        }.imgs{
+            height: 30/@rem;
+            width: 30/@rem;
+            background: 100% 100%;
+            position: absolute;
+            z-index: 10;
+            margin-left: 170/@rem;
+            margin-top: 30/@rem
+        }
+    }   
+section{
+    height:2556/@rem;
+    width: 100vw;
+    background: #f3f3f3;
+}
+section .top{
+    height:227/@rem;
+    width: 100vw;
+    background: #fff;
+    margin-bottom: 30/@rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column
+}
+.top_box{
+    width:750/@rem;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top_box img{
+    height: 105/@rem;
+    width:105/@rem;
+    margin-top:25/@rem
+}
+.top_p{
+    font-size:26/@rem;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+.top_p p{
+    margin-top:-40/@rem;
+}
+.cr{
+    height: 710/@rem;
+    width: 100vw;
+    background: #fff;
+    margin-bottom: 30/@rem;
+    >.topp{
+        height:80/@rem;
+        width: 100vw;
+        border-bottom: 1px solid #dcdcdc;  
+        border-top: 1px solid #dcdcdc;
+        >p{
+            text-indent: 32/@rem;
+            font-size: 30/@rem;
+            line-height:80/@rem;  
+            float: left;
+        }
+        >.img1{
+            float: right;
+            margin-top: 30/@rem;
+            margin-right: 32/@rem;
+        }
+        >.span{
+            float: right;
+            font-size: 27/@rem;
+            line-height:80/@rem; 
+            margin-right: 10/@rem;
+        }
+    }
+    >.top_boxx{
+        height: 630/@rem;
+        width: 100vw;
+        background:#fff;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 2px 2px 2px #ddd;
+        >.top_boxx1{
+            height: 210/@rem;
+            width: 670/@rem;
+            margin: 0 auto;
+            >.img5{
+                height:165/@rem;
+                width: 165/@rem;
+                background-size: 100% 100%;
+                float: left;
+                display: block;
+                margin-top: 20/@rem;
+            }
+            >.p_box{
+                height: 210/@rem;
+                width: 465/@rem;
+                float: right;
+                margin-left: 10/@rem;
+                >p:nth-child(1){
+                    color:#333;
+                    font-size: 35/@rem;
+                    margin-top: 15/@rem;
+                    //这段一会要改
+                    margin-bottom: 10/@rem;
+                    font-weight: 600
+                }
+                >p:nth-child(2){
+                    border: 1px solid #b8123e;
+                    box-sizing: border-box;
+                    width: 86/@rem;
+                    height: 32/@rem;
+                    font-size: 20/@rem; line-height: 32/@rem;
+                    text-align: center;
+                    color:#b8123e;
+                     //这段一会要改
+                     margin-bottom: 10/@rem;
+                }
+                >p:nth-child(3){
+                   color:#666;
+                   font-size: 25/@rem;
+                   //这段一会要改
+                   margin-bottom: 10/@rem;
+                }
+                >p:nth-child(4){
+                    color:#666;
+                    font-size: 25/@rem;
+                    //这段一会要改
+                    margin-bottom: 10/@rem;
+                 }
+            }
+        }
+    }
+}
+    .top_boxx2{
+        height: 210/@rem;
+        width: 670/@rem;
+        margin: 0 auto;
+        border-top:1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        >.img5{
+            height:165/@rem;
+            width: 165/@rem;
+            background-size: 100% 100%;
+            float: left;
+            display: block;
+            margin-top: 20/@rem;
+        }
+        >.p_box{
+            height: 210/@rem;
+            width: 465/@rem;
+            float: right;
+            margin-left: 10/@rem;
+            >p:nth-child(1){
+                color:#333;
+                font-size: 35/@rem;
+                margin-top: 15/@rem;
+                //这段一会要改
+                margin-bottom: 10/@rem;
+                font-weight: 600
+            }
+            >p:nth-child(2){
+                border: 1px solid #b8123e;
+                box-sizing: border-box;
+                width: 86/@rem;
+                height: 32/@rem; text-align: center; line-height: 32/@rem;
+                font-size: 20/@rem;
+                color:#b8123e;
+                 //这段一会要改
+                 margin-bottom: 10/@rem;
+            }
+            >p:nth-child(3){
+               color:#666;
+               font-size: 25/@rem;
+               //这段一会要改
+               margin-bottom: 10/@rem;
+            }
+            >p:nth-child(4){
+                color:#666;
+                font-size: 25/@rem;
+                //这段一会要改
+                margin-bottom: 10/@rem;
+             }
+        }
+    } 
+    .ft_copy{
+        width: 100%;
+        height: 110/@rem;
+    } 
+.ft{
+    height:110/@rem;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    >.ft_box{
+        
+        >img{
+            height: 45/@rem;
+            width: 45/@rem;
+            background-size:100% 100%; 
+        }
+        
+        >p{
+            font-size: 20/@rem;
+            margin-top:2/@rem;
+        }
+    }
+    :hover{
+        color:#b8123e;
+    }
+} 
+
+

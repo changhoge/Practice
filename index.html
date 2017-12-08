@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/less.css" type="text/css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <script>
+        var pixelRation = 1/ window.devicePixelRatio;  //还原设备的真是分辨率
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRation+',minimum-scale='+pixelRation+',maximum-scale='+pixelRation+'"/>')
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";
+    </script>
+     <script src="dist/js/swiper.min.js"></script>
+    <title>动态REM</title>
+</head>
+<body>
+    <header>
+        <div class="imger">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="imgs/1.png"></div>
+                          <div class="swiper-slide"><img src="imgs/21.png"></div>
+                          <div class="swiper-slide"><img src="imgs/22.png"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+        </div>         
+                      <!-- Swiper JS -->
+                     
+                    
+                      <!-- Initialize Swiper -->
+                      <script>
+                        var swiper = new Swiper('.swiper-container', {
+                          pagination: {
+                            el: '.swiper-pagination',
+                          },
+                        });
+                      </script>
+        <!-- <script>
+           var oimgs = document.getElementById("imgs");
+           var im = oimgs.getElementsByTagName('img');
+           var timer =null;
+           var index=0;
+           im[0].style.opacity = 1;
+           timer=setInterval(function(){
+               if(index==im.length){index=0};
+               rotate(index);
+               index++;
+           },2000)
+           function rotate(index){
+                for(i=0;i<im.length;i++){
+                    if(i==index){
+                        im[i].style.opacity = 1;
+                        if(i>0){
+                         im[i-1].style.opacity = 0;
+                        }
+                    }else if(!i==index){
+                        im[i].style.opacity = 0;
+                    }
+                }
+           }
+      </script>  -->
+         <form action="#"> 
+            <input type="text" placeholder="请输入关键词">
+            <p>
+                <select name="">
+                    <option>课程</option>
+                    <option>课程</option>
+                    <option>课程</option>
+                </select>
+            </p>
+            <img class="imgs" src="imgs/2.png">
+        </form>             
+    </header>
+    <section>
+        <div class="top">
+            <div class="top_box">
+                <img src="imgs/3.png">
+                <img src="imgs/4.png">
+                <img src="imgs/5.png">
+                <img src="imgs/6.png">
+            </div>
+            <div class="top_p">
+                <p>定制教育</p>
+                <p>签约机构</p>
+                <p>名师推荐</p>
+                <p>全部课程</p>
+            </div>
+        </div>
+        <div class="cr">
+            <div class="topp">
+                <p>文化才艺</p>
+                
+                <img class="img1" src="imgs/7.png"><span class="span">更多</span>
+            </div>
+            <div class="top_boxx">
+                <div class="top_boxx1">
+                    <img class="img5" src="imgs/8.png">
+                    <div class="p_box">
+                        <p>金宝贝早教中心</p>
+                        <p>三星级</p>
+                        <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                        <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                    </div>
+                </div>
+                <div class="top_boxx2">
+                    <img class="img5" src="imgs/9.png">
+                    <div class="p_box">
+                        <p>台湾长颈鹿美语昆山校</p>
+                        <p>三星级</p>
+                        <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                        <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                    </div>
+                </div>
+                <div class="top_boxx1">
+                    <img class="img5" src="imgs/10.png">
+                    <div class="p_box">
+                        <p>精锐教育</p>
+                        <p>三星级</p>
+                        <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                        <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="cr">
+                <div class="topp">
+                    <p>文化才艺</p>
+                    
+                    <img class="img1" src="imgs/7.png"><span class="span">更多</span>
+                </div>
+                <div class="top_boxx">
+                    <div class="top_boxx1">
+                        <img class="img5" src="imgs/11.png">
+                        <div class="p_box">
+                            <p>金宝贝早教中心</p>
+                            <p>三星级</p>
+                            <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                            <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                        </div>
+                    </div>
+                    <div class="top_boxx2">
+                        <img class="img5" src="imgs/12.png">
+                        <div class="p_box">
+                            <p>台湾长颈鹿美语昆山校</p>
+                            <p>三星级</p>
+                            <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                            <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                        </div>
+                    </div>
+                    <div class="top_boxx1">
+                        <img class="img5" src="imgs/13.png">
+                        <div class="p_box">
+                            <p>精锐教育</p>
+                            <p>三星级</p>
+                            <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                            <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="cr">
+                    <div class="topp">
+                        <p>文化才艺</p>
+                        
+                        <img class="img1" src="imgs/7.png"><span class="span">更多</span>
+                    </div>
+                    <div class="top_boxx">
+                        <div class="top_boxx1">
+                            <img class="img5" src="imgs/14.png">
+                            <div class="p_box">
+                                <p>金宝贝早教中心</p>
+                                <p>三星级</p>
+                                <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                                <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                            </div>
+                        </div>
+                        <div class="top_boxx2">
+                            <img class="img5" src="imgs/15.png">
+                            <div class="p_box">
+                                <p>台湾长颈鹿美语昆山校</p>
+                                <p>三星级</p>
+                                <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                                <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                            </div>
+                        </div>
+                        <div class="top_boxx1">
+                            <img class="img5" src="imgs/16.png">
+                            <div class="p_box">
+                                <p>精锐教育</p>
+                                <p>三星级</p>
+                                <p>好评率：100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：5.00</p>
+                                <p>人气：834&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 信用：3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="ft_copy"></div>    
+         <div class="ft">
+                <div class="ft_box">
+                    <img src="imgs/17.png">
+                    <p>主页</p>
+                </div>
+            
+                <div class="ft_box">
+                    <img src="imgs/18.png">
+                    <p>分类</p>
+                </div>
+                <div class="ft_box">
+                    <img src="imgs/19.png">
+                    <p>发布</p>
+                </div>
+                <div class="ft_box">
+                        <img src="imgs/20.png">
+                    <p>我的</p>
+                </div>
+        </div>       
+    </section>
+     
+</body>
+</html>
